@@ -74,7 +74,7 @@
 			</div>
 	
 	<!--默认搜索-->
-	<form action="https://searx.be/search?q=" data-placeholder=" method="get" target="_blank" class="super-search-fm">
+	<form action="https://searx.be/search?q=" data-placeholder= "method="get" target="_blank" class="super-search-fm">
 	    <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="一个尊重隐私、可再开发的搜索引擎" style="outline:0" autocomplete="on">
 	    <button type="submit"><i class="iconfont icon-search"></i></button>
 	</form> 
@@ -108,7 +108,7 @@
 			<ul class="search-type">
 				<li><input hidden="" type="radio" name="type" id="type-baidu1" value="https://searx.be/search?q=" data-placeholder="Searx：开源搜索引擎"><label for="type-baidu1"><span class="text-muted">SearX搜</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-gsou1" value="https://g.aunger.cf/search?q=" data-placeholder="Google搜索：谷歌镜像搜索引擎"><label for="type-gsou1"><span class="text-muted">谷歌镜像</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsofso.com/search?q=" data-placeholder="F搜｜无广告的良心搜索"><label for="type-fsou1"><span class="text-muted">F搜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsoufsou.com/search?q=" data-placeholder="F搜｜无广告的良心搜索"><label for="type-fsou1"><span class="text-muted">F搜</span></label></li>
 				
 <!--F搜(个性域名版)				
 				<li><input hidden="" type="radio" name="type" id="type-fsou2" value="https://fso.foxirj.com/search?q=" data-placeholder="F搜(免登录)｜无广告的良心搜索"><label for="type-fsou2"><span class="text-muted">F搜(免)</span></label></li>
@@ -123,7 +123,7 @@
 
 				<li><input hidden="" type="radio" name="type" id="type-360" value="https://www.baidu.com/s?wd=" data-placeholder="百度搜索"><label for="type-360"><span class="text-muted">百度</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing1"><span class="text-muted">Bing</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsofso.com/search?q=" data-placeholder="F搜｜无广告的良心搜索"><label for="type-fsou1"><span class="text-muted">F搜</span></label></li>
+
 
 <!--【备用】UC移动端搜索
 <li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索"><label for="type-sm"><span class="text-muted">神马</span></label></li>
@@ -171,13 +171,73 @@
             <span id="busuanzi_container_site_pv" style="display: none;"> ｜本站总访问量[<span id="busuanzi_value_site_pv"></span>]</span>
         </div>
 
+<br><br><br><br><br><br>
+
+<!-- 访客IP地址 -->
+<div style="text-align: center; width: 100%; border: green solid 0px; ">
+    <img alt="" src="https://tool.lu/netcard/" style="margin: 0 auto; filter: invert(85%) opacity(60%);" />
+</div>
+
 
 	</div>
 	 
+<!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓3列菜单开始↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+<div class="btn3 clearfix">
 
+    <div class="menu">
+        <div class="bt-name"><a href="https://game.aunger.cf">小游戏</a></div>
+    </div><!--menu-->
+
+
+    <div class="menu">
+        <div class="bt-name"><a href="https://so.aunger.cf">聚合搜索</a></div>
+    </div><!--menu-->
+
+
+    <div class="menu" >
+     <div class="bt-name"><a href="https://aboutme.aunger.cf">About me</a></div>
+    </div><!--menu-->
+
+</div><!--btn3-->
+<!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑3列菜单end↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
 <script type="text/javascript" src="script/clipboard.min.js"></script>
 <script type="text/javascript" src="script/app.js"></script>
+
+<!--禁止打开F12-->
+<script type="text/javascript">
+function collect() {
+    //开始javascript执行过程的数据收集
+    console.profile();
+    //配合profile方法，作为数据收集的结束
+    console.profileEnd();
+    //判断profiles里有无内容,若有,则说明按下了F12  
+    if (console.clear) {
+        //清空控制台
+        console.clear()
+    };
+    if (typeof console.profiles == "object") {
+        return console.profiles.length > 0;
+    }
+}
+function check() {
+    if ((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
+        jump();
+    }
+    if (typeof console.profiles == "object" && console.profiles.length > 0) {
+        jump();
+    }
+}
+check();
+window.onresize = function() {
+    //判断当前窗口内页高度和窗口高度
+    if ((window.outerHeight - window.innerHeight) > 200)
+    jump();
+}
+function jump() {
+    window.location = "https://fsoufsou.com";
+}
+</script>
 
 </body>
 
