@@ -46,17 +46,6 @@
 <link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
 
 <script type="text/javascript" src="script/jquery.min.js"></script>
-	
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?752012aaddc059bc2f00c6a7615638b2";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 
 </remove-web-limits-iqxin> 
 </head>
@@ -64,133 +53,196 @@ var _hmt = _hmt || [];
 <body data-rsssl="1" class="io-grey-mode">
 	  
 
-	<!-- 聚合搜索黑色-->
-	<div class="header-big  canvas-fx mb-4">
-		<div align="center" ><img src="LOGO_bai.png" , style="max-width: 40%"></div><br>
-		<div class="s-search">
-			<div id="search" class="s-search mx-auto">
-				 <div id="search-list-menu" class="hide-type-list">
-	    <div class="s-type text-center">
-	        <div class="s-type-list big">
-	 					<!--目录-->
-	            <div class="anchor" style="position: absolute; left: 157.5px; opacity: 1; width: 35px;"></div>
-	      					<label for="type-baidu" class="" data-id="group-a"><span>常用</span></label>
-	      					</label><label for="type-taobao1" data-id="group-e"><span>百科</span></label>
-									<label for="type-baidu1" data-id="group-b" class="active"><span>搜索</span></label>
-									<label for="type-xiongmaosoushu" data-id="group-f"><span>书籍</span></label>
-									<label for="type-zhiyoubang" data-id="group-d"><span>软件</span></label>
-									<label for="type-yunpanjingling" data-id="group-c"><span>其他</span></label>   
-							</div>
-	    		</div>
-			</div>
-	
+<!-- 聚合搜索黑色-->
+<div class="header-big  canvas-fx mb-4">
+
+
+	<!-- LOGO-白色-->
+	<div align="center" ><img src="LOGO_bai.png" , style="max-width: 40%"></div><br>
+		
+	<!-- 搜索模块-->
+	<div class="s-search">
+		    
+    <div id="search" class="s-search mx-auto">
+			<div id="search-list-menu" class="hide-type-list">
+	            <div class="s-type text-center">
+	                
+	<!--搜索目录-->
+	                <div class="s-type-list big">
+	                    <div class="anchor" style="position: absolute; left: 157.5px; opacity: 1; width: 35px;"></div>
+	      					<label for="type-baidu1" class="active" data-id="group-a"><span>搜索</span></label>
+	      					<label for="type-ask" data-id="group-b"><span>通用</span></label>
+	      					<label for="type-xiaoji" data-id="group-c"><span>百科</span></label>
+	      					<label for="type-jiumo" data-id="group-d"><span>书籍</span></label>
+	      					<label for="type-zhiyoubang" data-id="group-e"><span>软件</span></label>
+	      					<br>
+							<label for="type-icon" data-id="group-f"><span>设计</span></label>
+							<label for="type-github" data-id="group-g"><span>码云</span></label>
+							<label for="type-jingdong" data-id="group-h"><span>电商</span></label>
+							<label for="type-yunpanjingling" data-id="group-i"><span>资源</span></label>
+							<br>
+							<br>
+			        </div>
+			        
+	            </div>
+	        </div>
+
 	<!--默认搜索-->
-	<form action="https://fsoufsou.com/search?q=" data-placeholder= "method="get" target="_blank" class="super-search-fm">
+	<form action="https://fsoufsou.com/search?q=" data-placeholder= "" method="get" target="_blank" class="super-search-fm">
 	    <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="一个尊重隐私、可再开发的搜索引擎" style="outline:0" autocomplete="on">
 	    <button type="submit"><i class="iconfont icon-search"></i></button>
 	</form> 
-					
+
 	<!-- 搜索栏分类 -->
 	<div id="search-list" class="hide-type-list">
 	
-	    <div class="search-group group-a"><!--常用-->
+	    <div class="search-group group-a s-current"><!--搜索-->
 			<ul class="search-type">
-				<li><input hidden="" type="radio" name="type" id="type-baidu" value="https://serx.ml/search?q=" data-placeholder="SearX：开源搜索引擎"><label for="type-baidu"><span class="text-muted">SearX搜</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-gsou" value="https://g.aunger.cf/search?q=" data-placeholder="Google搜索：谷歌镜像搜索引擎"><label for="type-gsou"><span class="text-muted">谷歌镜像</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="谷歌搜索（无使用条件者勿选）"><label for="type-google"><span class="text-muted">Google</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-ask1" value="https://ask.nocode.com/search?q=" data-placeholder="就诊问问：简单描述你的问题（如：头疼）"><label for="type-ask1"><span class="text-muted">就诊问问</span></label></li>
-	      <li><input hidden="" type="radio" name="type" id="type-tool" value="https://tool.lu/search/?q=" data-placeholder="在线工具：实用在线工具大全"><label for="type-tool"><span class="text-muted">在线工具</span></label></li> 
-			</ul>
+				<li><input hidden="" type="radio" name="type" id="type-baidu1" value="https://searx.be/search?q=" data-placeholder="Searx：开源搜索引擎"><label for="type-baidu1"><span class="text-muted">SearX搜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-gsou1" value="https://g.aunger.cf/search?q=" data-placeholder="Google搜索：谷歌镜像搜索引擎"><label for="type-gsou1"><span class="text-muted">谷歌镜像</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsoufsou.com/search?q=" data-placeholder="F搜｜无广告的良心搜索"><label for="type-fsou1"><span class="text-muted">F搜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌搜索（无使用条件者勿选）"><label for="type-google1"><span class="text-muted">Google</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-duckduckgo" value="https://duckduckgo.com/?q=" data-placeholder="DockDockGo-匿名搜索引擎（科学上网）"><label for="type-duckduckgo"><span class="text-muted">DockDockGo</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-360" value="https://www.baidu.com/s?wd=" data-placeholder="百度搜索"><label for="type-360"><span class="text-muted">百度</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing1"><span class="text-muted">Bing</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-yandex" value="https://yandex.com/search/?text=" data-placeholder="Yandex搜索：俄罗斯搜索引擎"><label for="type-yandex"><span class="text-muted">Yandex</span></label></li>
+				</ul>
 		  </div>		 
 		
-		<div class="search-group group-e"><!--百科-->
+		
+		<div class="search-group group-b"><!--通用-->
 			<ul class="search-type">
-				<li><input hidden="" type="radio" name="type" id="type-taobao1" value="https://jikipedia.com/search?phrase="  data-placeholder="小鸡词典：拼音首字母缩写释义"><label for="type-taobao1"><span class="text-muted">小鸡词典</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-ask" value="https://ask.nocode.com/search?q=" data-placeholder="就诊问问：简单描述你的问题（如：头疼）"><label for="type-ask"><span class="text-muted">就诊问问</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-jd" value="https://zh.wikihow.com/wikiHowTo?search=" data-placeholder="学点什么生活技能"><label for="type-jd"><span class="text-muted">学点什么</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-xiachufang" value="https://www.lishichelun.com/search?q=" data-placeholder="历史车轮：搜索历史朝代/人物知识"><label for="type-xiachufang"><span class="text-muted">历史车轮</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-wikipedia" value="https://wiki.aunger.cf/w/index.php?&title=Special%3A搜索&go=前往&search=" data-placeholder="维基百科：人人可编辑的自由百科全书"><label for="type-wikipedia"><span class="text-muted">维基百科</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-jd" value="https://zh.wikihow.com/wikiHowTo?search=" data-placeholder="WikiHow：学点什么生活技能（如：做饭）"><label for="type-jd"><span class="text-muted">WikiHow</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-weibo" value="https://s.weibo.com/weibo?q=" data-placeholder="微博搜索：输入热搜关键词"><label for="type-weibo"><span class="text-muted">微博</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q=" data-placeholder="知乎搜索：输入搜索关键词"><label for="type-zhihu"><span class="text-muted">知乎</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tool" value="https://tool.lu/search/?q=" data-placeholder="在线工具：实用在线工具大全（如：IPv4）"><label for="type-tool"><span class="text-muted">在线工具</span></label></li> 
 				<li><input hidden="" type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&amp;s=" data-placeholder="香哈菜谱"><label for="type-xiangha"><span class="text-muted">香哈菜谱</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-kd100" value="http://www.kuaidi100.com/?" data-placeholder="快递100"><label for="type-kd100"><span class="text-muted">快递100</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-guobiao" value="http://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=" data-placeholder="国标：国家标准公共平台检索"><label for="type-guobiao"><span class="text-muted">国标</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tycr" value="https://www.tianyancha.com/humansearch/" data-placeholder="天眼查（查人）：输入姓名"><label for="type-tycr"><span class="text-muted">查人</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tycgs" value="https://www.tianyancha.com/search?key=" data-placeholder="天眼查（查公司））：输入公司名称"><label for="type-tycgs"><span class="text-muted">查公司</span></label></li>
+			</ul>
+		</div> 
+		
+		
+		<div class="search-group group-c"><!--百科-->
+			<ul class="search-type">
+				<li><input hidden="" type="radio" name="type" id="type-xiaoji" value="https://jikipedia.com/search?phrase="  data-placeholder="小鸡词典：拼音首字母缩写释义"><label for="type-taobao1"><span class="text-muted">小鸡词典</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-xiachufang" value="https://www.lishichelun.com/search?q=" data-placeholder="历史车轮：搜索历史朝代/人物知识"><label for="type-xiachufang"><span class="text-muted">历史车轮</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-wikipedia" value="https://wiki.aunger.cf/w/index.php?&title=Special%3A搜索&go=前往&search=" data-placeholder="维基百科：人人可编辑的自由百科全书"><label for="type-wikipedia"><span class="text-muted">维基百科</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-mbazk" value="https://wiki.mbalib.com/wiki/Special:Search?search=" data-placeholder="MBA智库：经管类专业百科平台"><label for="type-mbazk"><span class="text-muted">MBA智库</span></label></li>
+				
 			</ul>
 		</div>  
 		
-		<div class="search-group group-b s-current"><!--搜索-->
+		<div class="search-group group-d"><!--书籍-->
 			<ul class="search-type">
-				<li><input hidden="" type="radio" name="type" id="type-baidu1" value="https://serx.ml/search?q=" data-placeholder="Searx：开源搜索引擎"><label for="type-baidu1"><span class="text-muted">SearX搜</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-gsou1" value="https://g.aunger.cf/search?q=" data-placeholder="Google搜索：谷歌镜像搜索引擎"><label for="type-gsou1"><span class="text-muted">谷歌镜像</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-fsou1" value="https://fsoufsou.com/search?q=" data-placeholder="F搜｜无广告的良心搜索"><label for="type-fsou1"><span class="text-muted">F搜</span></label></li>
-				
-<!--F搜(个性域名版)				
-				<li><input hidden="" type="radio" name="type" id="type-fsou2" value="https://fso.foxirj.com/search?q=" data-placeholder="F搜(免登录)｜无广告的良心搜索"><label for="type-fsou2"><span class="text-muted">F搜(免)</span></label></li>
--->		
-				
-				<li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌搜索（无使用条件者勿选）"><label for="type-google1"><span class="text-muted">Google</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-duckduckgo" value="https://duckduckgo.com/?q=" data-placeholder="DockDockGo-匿名搜索引擎（科学上网）"><label for="type-duckduckgo"><span class="text-muted">DockDockGo</span></label></li>
-
-<!--Magi搜索已暂停服务
-				<li><input hidden="" type="radio" name="type" id="type-magi" value="https://magi.com/search?q=" data-placeholder="Magi搜索：人工智能筛选搜索引擎"><label for="type-magi"><span class="text-muted">Magi</span></label></li>
--->
-
-				<li><input hidden="" type="radio" name="type" id="type-360" value="https://www.baidu.com/s?wd=" data-placeholder="百度搜索"><label for="type-360"><span class="text-muted">百度</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing1"><span class="text-muted">Bing</span></label></li>
-
-
-<!--【备用】UC移动端搜索
-<li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索"><label for="type-sm"><span class="text-muted">神马</span></label></li>
--->
-				</ul>
-		</div>
-					 
-		<div class="search-group group-f"><!--书籍-->
-			<ul class="search-type">
+				<li><input hidden="" type="radio" name="type" id="type-jiumo" value="https://www.jiumodiary.com" data-placeholder="鸠摩搜书"><label for="type-jiumo"><span class="text-muted">鸠摩搜书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-weixinbook" value="https://weread.qq.com/#search" data-placeholder="微信读书"><label for="type-weixinbook"><span class="text-muted">微信读书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dbbook" value="https://search.douban.com/book/subject_search?search_text=" data-placeholder="豆瓣读书"><label for="type-dbbook"><span class="text-muted">豆瓣读书</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Pansoso" value="https://www.pansoso.com/zh/" data-placeholder="Pansoso搜书"><label for="type-Pansoso"><span class="text-muted">Pansoso搜书</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-xiongmaosoushu" value="https://ebook.huzerui.com/#/result?keyword=" data-placeholder="熊猫搜书"><label for="type-xiongmaosoushu"><span class="text-muted">熊猫搜书</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-LoreFree" value="https://ebook2.lorefree.com/site/index?s=" data-placeholder="LoreFree"><label for="type-LoreFree"><span class="text-muted">LoreFree</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-SoBook" value="https://sobooks.cc/search/" data-placeholder="SoBook"><label for="type-SoBook"><span class="text-muted">SoBook</span></label></li>
 			</ul>
 		</div>
-		
-		<div class="search-group group-d"><!--软件-->
+					 
+		<div class="search-group group-e"><!--软件-->
 			<ul class="search-type">
 				<li><input hidden="" type="radio" name="type" id="type-zhiyoubang" value="https://creatorsdaily.com/?keyword=" data-placeholder="创造者日报：每天发现有趣的软件"><label for="type-zhiyoubang"><span class="text-muted">创造者</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-jifeng" value="https://xinquji.com/search?q=" data-placeholder="新趣集：一起发现有趣的产品"><label for="type-jifeng"><span class="text-muted">新趣集</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-guokebohe" value="https://www.ghpym.com/?s=" data-placeholder="果核剥壳综合破解软件"><label for="type-guokebohe"><span class="text-muted">果核剥壳</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-chaoniu" value="https://2535802807.com/news/?list_refer-theme-" data-placeholder="超牛辅助网：游戏外挂辅助"><label for="type-chaoniu"><span class="text-muted">超牛辅助</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-zd423" value="https://www.423down.com/?s=" data-placeholder="ZD423综合破解软件"><label for="type-zd423"><span class="text-muted">ZD423</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Xclient" value="https://xclient.info/search/s/" data-placeholder="Xclient：精品Mac应用分享"><label for="type-Xclient"><span class="text-muted">Xclient</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-orsoon" value="https://s.orsoon.com/search?k=" data-placeholder="Orsoon：未来软件园搜索"><label for="type-orsoon"><span class="text-muted">Orsoon</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-orsoon" value="https://www.ruancang.net/#/sim?page=0&id=0&q=" data-placeholder="软件仓库：专业付费软件破解版下载（如：Photoshop）"><label for="type-orsoon"><span class="text-muted">软仓</span></label></li>
 			</ul>
 		</div>
 		
-		<div class="search-group group-c"><!--其他-->
+		
+		
+		<div class="search-group group-f"><!--设计-->
+			<ul class="search-type">
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-icon" value="https://www.iconfont.cn/search/index?searchType=icon&q=" data-placeholder="阿里巴巴矢量库">
+				    <label for="type-icon"><span class="text-muted">阿里巴巴矢量库</span></label>
+				</li>
+				<li>
+				    <input hidden="" type="radio" name="type" id="type-eicon" value="https://www.easyicon.net/language.en/iconsearch/" data-placeholder="Easy icon">
+				    <label for="type-eicon"><span class="text-muted">Easyicon</span></label>
+				</li>
+				<li><input hidden="" type="radio" name="type" id="type-588ku" value="https://588ku.com/" data-placeholder="千图网：海量设计素材下载"><label for="type-588ku"><span class="text-muted">千图网</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-cc0" value="https://cc0.cn/sou/" data-placeholder="CC0：免费可商用图片下载"><label for="type-cc0"><span class="text-muted">CC0图</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-icon" value="https://unsplash.com/search/photos/" data-placeholder="Unsplash Image：免费可下载商用图片"><label for="type-icon"><span class="text-muted">Unsplash</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-zhanzhangzhijia" value="http://aspx.sc.chinaz.com/query.aspx?keyword=" data-placeholder="站长之家：免费图片素材下载"><label for="type-zhanzhangzhijia"><span class="text-muted">站长之家</span></label></li>
+			</ul>
+		</div>
+		
+		
+		<div class="search-group group-g"><!--代码/域名/云服务-->
+			<ul class="search-type">
+				<li><input hidden="" type="radio" name="type" id="type-github" value="https://github.com/search?q=" data-placeholder="GitHub：世界上最大的代码托管网站和开源社区"><label for="type-github"><span class="text-muted">GitHub</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-gitee" value="https://search.gitee.com/?skin=rec&type=repository&q=" data-placeholder="Gitee：国内的开源代码托管平台"><label for="type-gitee"><span class="text-muted">Gitee</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-greasyfork" value="https://greasyfork.org/zh-CN/scripts?utf8=%E2%9C%93&q=" data-placeholder="Greasy Fork（油猴）：油猴插件脚本搜索"><label for="type-greasyfork"><span class="text-muted">油猴</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-whois" value="http://whois.chinaz.com/" data-placeholder="域名Whois查询：请输入网址（如: chinaz.com）"><label for="type-whois"><span class="text-muted">Whois</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-Alicloud" value="https://www.alibabacloud.com/tc/domain/search?keyword=" data-placeholder="阿里云域名Whois查询：请输入网址（如: chinaz.com）"><label for="type-Alicloud"><span class="text-muted">阿里云</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-docker" value="https://hub.docker.com/search?q=" data-placeholder="Docker镜像搜索"><label for="type-docker"><span class="text-muted">Docker</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-pypi" value="https://pypi.org/search/?q=" data-placeholder="Python包搜索"><label for="type-pypi"><span class="text-muted">Python</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-pkgs" value="https://pkgs.org/search/?q=" data-placeholder="Linux deb/rpm 搜索"><label for="type-pkgs"><span class="text-muted">Linux</span></label></li>
+			</ul>
+		</div>
+		
+		
+		<div class="search-group group-h"><!--电商-->
+			<ul class="search-type">
+				<li><input hidden="" type="radio" name="type" id="type-jingdong" value="https://search.jd.com/Search?keyword=" data-placeholder="京东：输入搜索的商品名称"><label for="type-zhiyoubang"><span class="text-muted">京东</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q=" data-placeholder="淘宝：输入搜索的商品名称"><label for="type-taobao"><span class="text-muted">淘宝</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dang" value="http://search.dangdang.com/?key=" data-placeholder="当当网：输入搜索的商品名称"><label for="type-dang"><span class="text-muted">当当</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-amazon" value="https://www.amazon.com/s?k=" data-placeholder="亚马逊美国区：输入搜索的商品名称"><label for="type-amazon"><span class="text-muted">亚马逊美区</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-amazoncn" value="https://www.amazon.cn/s?k=" data-placeholder="亚马逊海外购：输入搜索的商品名称"><label for="type-amazoncn"><span class="text-muted">亚马逊</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-kaola" value="https://search.kaola.com/search.html?key=" data-placeholder="考拉海购：输入搜索的商品名称"><label for="type-kaola"><span class="text-muted">考拉海购</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-you163" value="http://you.163.com/search?keyword=" data-placeholder="网易严选：输入搜索的商品名称"><label for="type-you163"><span class="text-muted">网易严选</span></label></li>
+			</ul>
+		</div>
+		
+		<div class="search-group group-i"><!--资源-->
 			<ul class="search-type">
 				<li><input hidden="" type="radio" name="type" id="type-yunpanjingling" value="https://yun.hei521.cn/index.php/search/" data-placeholder="天翼小站：资源搜索"><label for="type-yunpanjingling"><span class="text-muted">天翼小站</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-tool" value="https://tool.lu/search/?q=" data-placeholder="在线工具：实用在线工具大全"><label for="type-tool"><span class="text-muted">在线工具</span></label></li> 
-				<li><input hidden="" type="radio" name="type" id="type-dalipan" value="https://www.dalipan.com/#/main/search?keyword=" data-placeholder="大力盘：网盘资源搜索"><label for="type-dalipan"><span class="text-muted">大力盘</span></label></li>
-				<li><input hidden="" type="radio" name="type" id="type-rufengsou" value="https://www.dashengpan.com/#/main/search?keyword=" data-placeholder="大圣盘：网盘资源搜索"><label for="type-rufengsou"><span class="text-muted">大圣盘</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-tgmiao" value="http://meow.tg/search/" data-placeholder="TG喵：电报资源搜索"><label for="type-tgmiao"><span class="text-muted">TG喵</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-disboard" value="https://disboard.org/zh-cn/servers/tag/" data-placeholder="Disboard：Disboard聊天房资源搜索"><label for="type-disboard"><span class="text-muted">Disboard</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-soupian" value="https://soupian.app/search?key=" data-placeholder="搜片：搜你想看的影片"><label for="type-soupian"><span class="text-muted">搜片</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-dianyinggo" value="https://www.dianyinggou.com/so/" data-placeholder="电影狗：电影搜索引擎"><label for="type-dianyinggo"><span class="text-muted">电影狗</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-alipansou" value="https://www.alipansou.com/search?k=" data-placeholder="猫狸盘搜：阿里云盘资源搜索"><label for="type-alipansou"><span class="text-muted">阿里盘搜</span></label></li>
+				<li><input hidden="" type="radio" name="type" id="type-555dy" value="https://www.555dy1.com/vodsearch/-------------.html?wd=" data-placeholder="555电影：输入新剧/电影名称搜索"><label for="type-555dy"><span class="text-muted">555电影</span></label></li>
 				<li><input hidden="" type="radio" name="type" id="type-xiaokesousou" value="https://www.xiaozhukuaipan.com/s/search?q=" data-placeholder="小猪快盘：网盘资源搜索"><label for="type-xiaokesousou"><span class="text-muted">小猪快盘</span></label></li>
 			</ul>
 		</div>
 					 
 	</div>
-			</div>
-		</div>
+    
+    </div>
 
-        <!--浏览量记录-->
-        <div class="div_foot" style="font-size:.70rem;color:#6c757d;position:absolute;height:10px;text-align:center;line-height:50px;width:100%;">
+    </div>
+
+    <!--浏览量记录-->
+    <div class="div_foot" style="font-size:.70rem;color:#6c757d;position:absolute;height:10px;text-align:center;line-height:50px;width:100%;">
             <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_page_pv" style="display: none;"> 本页总阅读量[<span id="busuanzi_value_page_pv"></span>]</span>
             <span id="busuanzi_container_site_uv" style="display: none;"> ｜本站总访客数[<span id="busuanzi_value_site_uv"></span>]</span>
             <span id="busuanzi_container_site_pv" style="display: none;"> ｜本站总访问量[<span id="busuanzi_value_site_pv"></span>]</span>
         </div>
 
-<br><br><br><br><br><br>
+    <br><br><br><br>
 
-<!-- 访客IP地址 -->
-<div style="text-align: center; width: 100%; border: green solid 0px; ">
-    <img alt="" src="https://tool.lu/netcard/" style="margin: 0 auto; filter: invert(85%) opacity(60%);" />
+    <!-- 访客IP地址 -->
+    <div style="text-align: center; width: 100%; border: green solid 0px; ">
+        <img alt="" src="https://tool.lu/netcard/" style="margin: 0 auto; filter: invert(85%) opacity(60%);" />
+    </div>
+
+
 </div>
-
-
-	</div>
 	 
 <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓3列菜单开始↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 <div class="btn3 clearfix">
@@ -206,7 +258,7 @@ var _hmt = _hmt || [];
 
 
     <div class="menu" >
-     <div class="bt-name"><a href="https://aboutme.aunger.cf">About me</a></div>
+     <div class="bt-name"><a href="https://top.aunger.cf">导航</a></div>
     </div><!--menu-->
 
 </div><!--btn3-->
@@ -214,6 +266,43 @@ var _hmt = _hmt || [];
 
 <script type="text/javascript" src="script/clipboard.min.js"></script>
 <script type="text/javascript" src="script/app.js"></script>
+
+<!--禁止打开F12--> 
+<!--
+<script type="text/javascript">
+function collect() {
+    //开始javascript执行过程的数据收集
+    console.profile();
+    //配合profile方法，作为数据收集的结束
+    console.profileEnd();
+    //判断profiles里有无内容,若有,则说明按下了F12  
+    if (console.clear) {
+        //清空控制台
+        console.clear()
+    };
+    if (typeof console.profiles == "object") {
+        return console.profiles.length > 0;
+    }
+}
+function check() {
+    if ((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
+        jump();
+    }
+    if (typeof console.profiles == "object" && console.profiles.length > 0) {
+        jump();
+    }
+}
+check();
+window.onresize = function() {
+    //判断当前窗口内页高度和窗口高度
+    if ((window.outerHeight - window.innerHeight) > 200)
+    jump();
+}
+function jump() {
+    window.location = "https://fsoufsou.com";
+}
+</script>
+-->
 
 </body>
 
