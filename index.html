@@ -62,7 +62,7 @@
 
 
 	<!-- LOGO-白色-->
-	<div align="center" ><img src="LOGO_bai.png" , style="max-width: 40%"></div><br>
+	<div align="center" ><img src="LOGO_bai.png"  style="max-width: 40%"></div><br>
 		
 	<!-- 搜索模块-->
 	<div class="s-search">
@@ -246,23 +246,27 @@
 
     </div>
 
-    <!--浏览量记录-->
+ <!--浏览量记录-->
     <div class="div_foot" style="font-size:.70rem;color:#6c757d;position:absolute;height:10px;text-align:center;line-height:30px;width:100%;">
         <br>
+        <!--显示IP地址01--> 
+        <span style="font-size:.70rem;color:#6c757d;">你的IP地址：</span><span id="ip" style="font-size:.70rem;color:#6c757d;">显示IP</span>
         <p style="font-size:.70rem;color:#6c757d;">安杰聚合搜索 ©2022 安杰团队｜Mail：vip@aunger.ml</p>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <span id="busuanzi_container_page_pv" style="display: none;"> 本页总阅读量[<span id="busuanzi_value_page_pv"></span>]</span>
         <span id="busuanzi_container_site_uv" style="display: none;"> ｜本站总访客数[<span id="busuanzi_value_site_uv"></span>]</span>
         <span id="busuanzi_container_site_pv" style="display: none;"> ｜本站总访问量[<span id="busuanzi_value_site_pv"></span>]</span>
+
     </div>
-
-    <br><br><br><br>
-
+    
+    
     <!-- 访客IP地址 -->
+    <!-- 
+	<br><br><br><br>
     <div style="text-align: center; width: 100%; border: green solid 0px; ">
         <img alt="" src="https://tool.lu/netcard/" style="margin: 0 auto; filter: invert(85%) opacity(60%);" />
     </div>
-
+    -->
 
 </div>
 	 
@@ -288,6 +292,20 @@
 
 <script type="text/javascript" src="script/clipboard.min.js"></script>
 <script type="text/javascript" src="script/app.js"></script>
+
+<!--显示IP地址02--> 
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+(function ip() {
+
+    var str=returnCitySN["cip"]+','+returnCitySN["cname"];
+
+    var _result=document.getElementById("ip");
+
+    _result.innerHTML = str;
+
+})();
+</script>
 
 <!--禁止打开F12--> 
 <!--
